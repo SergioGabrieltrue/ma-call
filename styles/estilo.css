@@ -1,0 +1,51 @@
+.main_menu{
+    background-image: linear-gradient(to bottom, rgb(180, 18, 18) 90%, black);
+    font-family: "Bebas Neue", "arial";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.spartans-logo{
+   display: none;
+}
+
+#ham-button{
+    border:none;
+    background: none;
+    padding:0px;
+    position: relative;
+    font-size:2rem;
+}
+
+.hamburger-button-js-enabled ~ .main_nav{
+    list-style: none;
+    position: absolute;
+    right: 15px;
+    top:50px;
+}
+
+.hamburger-button-js-enabled ~ .menu-closed{
+    opacity: 0;
+    
+}
+
+.hamburger-button-js-enabled ~ .main_nav:not(.menu-closed){
+    opacity: 1;
+}
+
+.main_nav{
+    transition: opacity 0.3s linear;
+
+    a{  
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        padding:1rem;
+        background-color: rgb(78, 78, 76);
+        outline:1px solid black;
+
+    }
+}
+

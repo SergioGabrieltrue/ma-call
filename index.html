@@ -4,24 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Gabriel">
+    <meta name="description" content="pagina sobre uma academia de artes marciais">
+    <meta name="keywords" content="html5, css3, javascript, tecnologia">
     <title>MA Training</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/estilo.css">
 </head>
 
 <body>
-    <header>
+    <header class="main_menu">
         <h1>Spartans Club</h1>
-
         <nav>
-            <button>
-                <i class="fas fa-bars fa-2x"></i>
+            <button id="ham-button" aria-label="Menu Principal" aria-controls="main_nav" aria-expanded="true">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <ul>
-                <li><a href="#home"></a>Home</li>
-                <li><a href="#modalidades"></a>Modalidades</li>
-                <li><a href="#planos"></a>Planos</li>
-                <li><a href="#sobre_nos"></a>Sobre nós</li>
+            <div class="spartans-logo">
+                <img src="imagens/spartans.jpg" alt="">
+            </div>
+            <ul id="main_nav" class="main_nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#modalidades">Modalidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#sobre_nos">Sobre nós</a></li>
             </ul>
         </nav>
     </header>
@@ -150,6 +158,8 @@
             <p>Sergio Gabriel - Obrigado por apoiar meu trabalho: <a href="https://github.com/SergioGabrieltrue" target="_blank"></a>Github</p>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
