@@ -1,10 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    background-color: rgb(63, 63, 63);
+    margin: auto;
+}
+
+
+.main-content__wrapper{
+    max-width: 90rem;
+    padding: 0rem;
+}
+
+
+
 .main_menu{
-    background-image: linear-gradient(to bottom, rgb(180, 18, 18) 90%, black);
+    background-image: linear-gradient(to bottom, rgb(122, 22, 22) 70%, black 30%);
     font-family: "Bebas Neue", "arial";
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+
+    h1{
+        font-size:2.5rem;
+    }
 }
 
 .spartans-logo{
@@ -22,8 +41,9 @@
 .hamburger-button-js-enabled ~ .main_nav{
     list-style: none;
     position: absolute;
-    right: 15px;
-    top:50px;
+    right: 10px;
+    top:80px;
+    z-index: 1;
 }
 
 .hamburger-button-js-enabled ~ .menu-closed{
@@ -49,4 +69,88 @@
         outline:1px solid black;
     }
 }
+
+.call-section{
+    margin: 0 0 2rem;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(24, 24, 136, 0.2), transparent, rgba(0, 0, 0, 0.5)), linear-gradient(to left, rgba(255, 0, 0, 0.2), transparent, rgba(0, 0, 0, 0.5)), url(../imagens/wallpaperflare.com_wallpaper.jpg);
+    box-shadow: 2px 2px 20px black;
+    /* outline: 8px ridge  rgb(122, 22, 22); */
+    box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.call__text{
+    color: #F5F5F5;
+    font-family: "Oswald", serif;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.call__title{
+    background-color:rgb(0, 0, 0, 0.9);
+    padding:0.5rem;
+    color:#F5F5F5;
+    font-size: 2rem;
+    margin-top:0;
+    margin-bottom: 6rem;
+
+    strong{
+    text-transform: uppercase;
+
+    }
+
+    strong:first-child{
+        color: rgb(122, 22, 22);
+
+    }
+
+    strong:last-child{
+        color: rgb(27 35 78);
+    }
+}
+
+.call__title-text{
+        line-height: 1.5;
+        font-size: 1.1rem;
+        margin:0;
+        color:black;
+        background-color: #EFBF04;
+}
+
+.call-direct{
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 1.25rem;
+    border-radius: 6px;
+    color:#f11212;
+}
+
+.call-direct:hover{
+    background-image: url(../imagens/download.gif);
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+/* @media (min-width: 50rem) {
+    .call-title{
+        background-image: url(../imagens/homem-1.jpg);
+        aspect-ratio: 16/9;
+    }
+} */
 
