@@ -17,55 +17,81 @@
 
 <body>
     <div class="main-content__wrapper">
-        <header class="main_menu">
-            <h1>Spartans Club</h1>
-            <nav>
-                <button id="ham-button" aria-label="Menu Principal" aria-controls="main_nav" aria-expanded="true">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <div class="spartans-logo">
-                    <img src="imagens/spartans.jpg" alt="spartans logo">
+        <main>
+            <header class="main_menu">
+                <h1>Spartans Club</h1>
+                <nav>
+                    <button id="ham-button" aria-label="Menu Principal" aria-controls="main_nav" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="spartans-logo">
+                        <img src="imagens/spartans.jpg" alt="spartans logo">
+                    </div>
+                    <ul id="main_nav" class="main_nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#modalidades">Modalidades</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#sobre_nos">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="call-section">
+
+                <div class="call__text">
+                    <h2 class="call__title">A <strong>pior luta</strong> é a que não se <strong>treina</strong></h2>
+
+                    <p class="call__title-text">
+                        Participe agora da maior Academia de São Paulo, capital!<br>
+                        Desenvolva o corpo e a mente para ser campeão.
+                    </p>
                 </div>
-                <ul id="main_nav" class="main_nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#modalidades">Modalidades</a></li>
-                    <li><a href="#planos">Planos</a></li>
-                    <li><a href="#sobre_nos">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="call-section">
 
-            <div class="call__text">
-                <h2 class="call__title">A <strong>pior luta</strong> é a que não se <strong>treina</strong></h2>
+                <div>
+                    <a class="call-direct" href="#home">Comece</a>
+                </div>
+            </section>
+        </main>
 
-                <p class="call__title-text">
-                    Participe agora da maior Academia de São Paulo, capital!<br>
-                    Desenvolva o corpo e a mente para ser campeão.
-                </p>
-            </div>
-
-            <div>
-                <a class="call-direct" href="#home">Comece</a>
-            </div>
-        </section>
-
-        <section>
-            <article>
+        <section class="modal-section">
+            <article class="modal-card">
                 <img src="imagens/Taekwondo-girl.jpg" alt="Mulher de dobok chutando alto">
-                <h3>Taekwondo</h3>
+                <div class="modal-text">
+                    <h3 class="modal-title">Taekwondo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quisquam inventore quibusdam
+                        possimus commodi tempora, aut optio tempore obcaecati quidem rem aperiam tenetur facere unde in
+                        fugit doloremque sint sunt et accusamus voluptatem distinctio ipsa voluptatum? Dolore, ullam est
+                        repudiandae itaque ex sapiente delectus et quas in dolores animi doloremque?</p>
+                </div>
             </article>
-            <article>
+            <article class="modal-card">
                 <img src="imagens/jiu-jitsu-fight.jpg" alt="Duas mulheres lutando Jiu-Jitsu">
-                <h3>Jiu-Jitsu</h3>
+                <div class="modal-text">
+                    <h3 class="modal-title">Jiu-Jitsu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quisquam inventore quibusdam
+                        possimus commodi tempora, aut optio tempore obcaecati quidem rem aperiam tenetur facere unde in
+                        fugit doloremque sint sunt et accusamus voluptatem distinctio ipsa voluptatum? Dolore, ullam est
+                        repudiandae itaque ex sapiente delectus et quas in dolores animi doloremque?</p>
+                </div>
             </article>
-            <article>
-                <img src="imagens/boxing-guy.jpg" alt="Boxeador pousando para luta">
-                <h3>Boxe</h3>
+            <article class="modal-card">
+                <img src="imagens/boxing.jpg" alt="Boxeador pousando para luta">
+                <div class="modal-text">
+                    <h3 class="modal-title">Boxe</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quisquam inventore quibusdam
+                        possimus commodi tempora, aut optio tempore obcaecati quidem rem aperiam tenetur facere unde in
+                        fugit doloremque sint sunt et accusamus voluptatem distinctio ipsa voluptatum? Dolore, ullam est
+                        repudiandae itaque ex sapiente delectus et quas in dolores animi doloremque?</p>
+                </div>
             </article>
-            <article>
+            <article class="modal-card">
                 <img src="imagens/muay-thai-guy.jpg" alt="Lutador praticando muay-thai">
-                <h3>Muay-Thai</h3>
+                <div class="modal-text">
+                    <h3 class="modal-title">Muay-Thai</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quisquam inventore quibusdam
+                        possimus commodi tempora, aut optio tempore obcaecati quidem rem aperiam tenetur facere unde in
+                        fugit doloremque sint sunt et accusamus voluptatem distinctio ipsa voluptatum? Dolore, ullam est
+                        repudiandae itaque ex sapiente delectus et quas in dolores animi doloremque?</p>
+                </div>
             </article>
         </section>
 
@@ -136,7 +162,7 @@
             <div>
                 <h2>Depoimentos</h2>
                 <figure>
-                    <img src="imagens/homem-1.jpg" alt="">
+                    <img style="display:none" src="imagens/homem-1.jpg" alt="">
                     <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate et nostrum
                         accusantium doloremque earum. Aut nisi facere soluta perspiciatis veritatis repudiandae ex,
                         harum placeat alias deserunt vel blanditiis laborum laboriosam id sed assumenda sequi delectus
@@ -146,7 +172,7 @@
                 </figure>
 
                 <figure>
-                    <img src="imagens/homem-2.jpg" alt="">
+                    <img style="display:none" src="imagens/homem-2.jpg" alt="">
                     <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate et nostrum
                         accusantium doloremque earum. Aut nisi facere soluta perspiciatis veritatis repudiandae ex,
                         harum placeat alias deserunt vel blanditiis laborum laboriosam id sed assumenda sequi delectus
@@ -161,7 +187,7 @@
 
 
         <footer>
-            <img src="imagens/spartans.jpg" alt="Logo Academia">
+            <img style="display:none" src="imagens/spartans.jpg" alt="Logo Academia">
             <div>
                 <h3>Nossas redes Sociais</h3>
                 <address>
@@ -173,7 +199,7 @@
             </div>
             <div>
                 <figure>
-                    <img src="imagens/bruce-lee.jfif" alt="Bruce Lee">
+                    <img style="display:none" src="imagens/bruce-lee.jfif" alt="Bruce Lee">
                     <blockquote>Não reze por uma vida fácil, reze por forças para suportar uma difícil.</blockquote>
                     <figcaption>Bruce Lee</figcaption>
                 </figure>
